@@ -1,0 +1,59 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SharedDataSet xmlns="http://schemas.microsoft.com/sqlserver/reporting/2010/01/shareddatasetdefinition" xmlns:rd="http://schemas.microsoft.com/SQLServer/reporting/reportdesigner">
+  <DataSet Name="DataSet1">
+    <Query>
+      <DataSourceReference>postilion_office</DataSourceReference>
+      <CommandText>select * from Unibank_S140_history</CommandText>
+    </Query>
+    <Fields>
+      <Field Name="TX_TRANSACTION_ID">
+        <DataField>TX_TRANSACTION_ID</DataField>
+        <rd:TypeName>System.Int64</rd:TypeName>
+      </Field>
+      <Field Name="TRANSACTION_TYPE">
+        <DataField>TRANSACTION_TYPE</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="PAN">
+        <DataField>PAN</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="TERMINAL_MERCHANT_ID">
+        <DataField>TERMINAL_MERCHANT_ID</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="TERM_FRIENDLY_NAME">
+        <DataField>TERM_FRIENDLY_NAME</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="TERM_ADDRESS">
+        <DataField>TERM_ADDRESS</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="TANSACTION_TIME">
+        <DataField>TANSACTION_TIME</DataField>
+        <rd:TypeName>System.DateTime</rd:TypeName>
+      </Field>
+      <Field Name="STAN">
+        <DataField>STAN</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="RRN">
+        <DataField>RRN</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="IMPACT_AMOUNT">
+        <DataField>IMPACT_AMOUNT</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+      <Field Name="RESPONSE">
+        <DataField>RESPONSE</DataField>
+        <rd:TypeName>System.String</rd:TypeName>
+      </Field>
+      <Field Name="SURCHARGE">
+        <DataField>SURCHARGE</DataField>
+        <rd:TypeName>System.Decimal</rd:TypeName>
+      </Field>
+    </Fields>
+  </DataSet>
+</SharedDataSet>
